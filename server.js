@@ -85,7 +85,7 @@ app.use("/", checkloggedinuser, video);
 //app.use("/", transaction);
 mongoose.Promise = global.Promise;
 mongoose.connect(
-  process.env.uri || 'mongodb://localhost:27017/dreameleven',
+  process.env.uri || 'mongodb+srv://spalvinmuthesh:eTgosQyVVeNpOZGh@cluster0.x1ack.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
   { useNewUrlParser: true, useUnifiedTopology: true },
   (error) => {
     if (error) {
