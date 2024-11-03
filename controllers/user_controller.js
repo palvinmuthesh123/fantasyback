@@ -415,7 +415,7 @@ router.post('/phoneLogin', async (req, res) => {
       var req = unirest("GET", "https://www.fast2sms.com/dev/bulkV2");
 
       req.query({
-        "authorization": process.env.fast2sms || "iI8bS2F1AnfoKHxpROrdel5VWBuNt6hLE0YsXwTmZJgqzj79yviVaRU1cXut8smbg0GLpKhrSfNxqvZD",
+        "authorization": "iI8bS2F1AnfoKHxpROrdel5VWBuNt6hLE0YsXwTmZJgqzj79yviVaRU1cXut8smbg0GLpKhrSfNxqvZD",
         "message": `enter this otp for logging in: ${OTP}`,
         "language": "english",
         "route": "q",
